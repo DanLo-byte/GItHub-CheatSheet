@@ -9,7 +9,7 @@ This is a simple command's cheatsheet for GitHub
 
 
 
-##[Deployed Project](https://danlo-byte.github.io/GitHub-CheatSheet/)
+## [Deployed Project](https://danlo-byte.github.io/GitHub-CheatSheet/)
 
 
-##[Repo Link](https://github.com/DanLo-byte/GitHub-CheatSheet/)
+## [Repo Link](https://github.com/DanLo-byte/GitHub-CheatSheet/)
