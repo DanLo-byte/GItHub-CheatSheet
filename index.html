@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Snippet Cheatsheet</title>
+  <link rel="stylesheet" href="./assets/reset.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+
+
+  <header>
+    <h1 class="page-title">
+      GitHub Command's Cheatsheet
+    </h1>
+    <p>
+      Ever have trouble recalling the exact syntax for your favorite GitHub code? Give it a permanent home and add it to
+      this page! Select any snippet below and it'll automatically select all of the code for you to copy.
+    </p>
+  </header>
+
+  <main>
+    <section class="row justify-center">
+
+<!-- 1 card -->
+      <div class="card-column">
+        <figure class="card code-card">
+          <h2 class="card-header">SETUP & INIT</h2>
+          <h4>Configuring user information, initializing and cloning repositories</h4>
+          <div class="card-body">
+            <p>Initialize an existing directory as a Git repository</p>
+          </div>
+          <pre class="code-block"><code>
+            git init
+          </code></pre>
+
+          <div class="card-body">
+            <p>Retrieve an entire repository from a hosted location via URL</p>
+          </div>
+          <pre class="code-block"><code>
+            git clone [url]
+          </code></pre>
+        </figure>
+      </div>
+      
+
+<!-- 2 card -->
+      <div class="card-column">
+        <figure class="card code-card">
+          <h2 class="card-header">STAGE & SNAPSHOT</h2>
+          <h4>Working with snapshots and the Git staging area</h4>
+          <div class="card-body">
+            <p>Show modified files in working directory, staged for your next commit</p>
+          </div>
+          <pre class="code-block"><code>
+            git status
+          </code></pre>
+
+          <div class="card-body">
+            <p>Add a file as it looks now to your next commit (stage)</p>
+          </div>
+          <pre class="code-block"><code>
+            git add [file]
+          </code></pre>
+
+          <div class="card-body">
+            <p>Unstage a file while retaining the changes in working directory</p>
+          </div>
+          <pre class="code-block"><code>
+            git reset [file]
+          </code></pre>
+
+          <div class="card-body">
+            <p>Diff of what is changed but not staged</p>
+          </div>
+          <pre class="code-block"><code>
+            git diff
+          </code></pre>
+
+          <div class="card-body">
+            <p>Diff of what is staged but not yet committed</p>
+          </div>
+          <pre class="code-block"><code>
+            git diff --staged
+          </code></pre>
+          
+          <div class="card-body">
+            <p>Commit your staged content as a new commit snapshot</p>
+          </div>
+          <pre class="code-block"><code>
+            git commit -m “[descriptive message]”
+          </code></pre>
+          
+        </figure>
+      </div>
+
+<!-- 3 card -->
+      <div class="card-column">
+        <figure class="card code-card">
+          <h2 class="card-header">BRANCH & MERGE</h2>
+          <h4>Isolating work in branches, changing context, and integrating changes</h4>
+          
+          <div class="card-body">
+            <p>List your branches. a * will appear next to the currently active branch</p>
+          </div>
+          <pre class="code-block"><code>
+            git branch
+          </code></pre>
+
+          <div class="card-body">
+            <p>Create a new branch at the current commit</p>
+          </div>
+          <pre class="code-block"><code>
+            git branch [branch-name]
+          </code></pre>
+
+          <div class="card-body">
+            <p>Switch to another branch and check it out into your working directory</p>
+          </div>
+          <pre class="code-block"><code>
+            git checkout
+          </code></pre>
+
+          <div class="card-body">
+            <p>Merge the specified branch’s history into the current one</p>
+          </div>
+          <pre class="code-block"><code>
+            git merge [branch]
+          </code></pre>
+          
+          <div class="card-body">
+            <p>Show all commits in the current branch’s history</p>
+          </div>
+          <pre class="code-block"><code>
+            git log
+          </code></pre>
+        </figure>
+      </div>
+
+<!-- 4 card -->
+      <div class="card-column">
+        <figure class="card code-card">
+          <h2 class="card-header">INSPECT & COMPARE</h2>
+          <h4>Examining logs, diffs and object information</h4>
+
+          <div class="card-body">
+            <p>Show the commit history for the currently active branch</p>
+          </div>
+          <pre class="code-block"><code>
+            git log
+          </code></pre>
+
+          <div class="card-body">
+                <p>Show the commits on branchA that are not on branchB</p>
+          </div>
+          <pre class="code-block"><code>
+            git log branchB..branchA
+          </code></pre>
+
+          <div class="card-body">
+              <p>Show the commits that changed file, even across renames</p>
+          </div>
+          <pre class="code-block"><code>
+            git log --follow [file]
+          </code></pre>
+
+          <div class="card-body">
+            <p>Show the diff of what is in branchA that is not in branchB</p>
+          </div>
+          <pre class="code-block"><code>   
+            git diff branchB...branchA  
+          </code></pre>
+
+          <div class="card-body">
+          <p>Show any object in Git in human-readable format</p>
+          </div>
+          <pre class="code-block"><code>    
+            git show [SHA]
+          </code></pre>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Made with <span role="img" aria-label="heart">❤️</span> and CSS</h3>
+  </footer>
+
+</body>
+
+</html>
