@@ -36,7 +36,7 @@
           <pre class="code-block"><code>
             git init
           </code></pre>
-
+<!-- section -->           
           <div class="card-body">
             <p>Retrieve an entire repository from a hosted location via URL</p>
           </div>
@@ -45,8 +45,6 @@
           </code></pre>
         </figure>
       </div>
-      
-
 <!-- 2 card -->
       <div class="card-column">
         <figure class="card code-card">
@@ -58,35 +56,35 @@
           <pre class="code-block"><code>
             git status
           </code></pre>
-
+<!-- section -->           
           <div class="card-body">
             <p>Add a file as it looks now to your next commit (stage)</p>
           </div>
           <pre class="code-block"><code>
             git add [file]
           </code></pre>
-
+<!-- section -->           
           <div class="card-body">
             <p>Unstage a file while retaining the changes in working directory</p>
           </div>
           <pre class="code-block"><code>
             git reset [file]
           </code></pre>
-
+<!-- section -->           
           <div class="card-body">
             <p>Diff of what is changed but not staged</p>
           </div>
           <pre class="code-block"><code>
             git diff
           </code></pre>
-
+<!-- section -->           
           <div class="card-body">
             <p>Diff of what is staged but not yet committed</p>
           </div>
           <pre class="code-block"><code>
             git diff --staged
           </code></pre>
-          
+<!-- section -->                     
           <div class="card-body">
             <p>Commit your staged content as a new commit snapshot</p>
           </div>
@@ -102,35 +100,35 @@
         <figure class="card code-card">
           <h2 class="card-header">BRANCH & MERGE</h2>
           <h4>Isolating work in branches, changing context, and integrating changes</h4>
-          
+<!-- section -->           
           <div class="card-body">
             <p>List your branches. a * will appear next to the currently active branch</p>
           </div>
           <pre class="code-block"><code>
             git branch
           </code></pre>
-
+<!-- section --> 
           <div class="card-body">
             <p>Create a new branch at the current commit</p>
           </div>
           <pre class="code-block"><code>
             git branch [branch-name]
           </code></pre>
-
+<!-- section --> 
           <div class="card-body">
             <p>Switch to another branch and check it out into your working directory</p>
           </div>
           <pre class="code-block"><code>
             git checkout
           </code></pre>
-
+<!-- section --> 
           <div class="card-body">
             <p>Merge the specified branch’s history into the current one</p>
           </div>
           <pre class="code-block"><code>
             git merge [branch]
           </code></pre>
-          
+<!-- section -->  
           <div class="card-body">
             <p>Show all commits in the current branch’s history</p>
           </div>
@@ -145,35 +143,35 @@
         <figure class="card code-card">
           <h2 class="card-header">INSPECT & COMPARE</h2>
           <h4>Examining logs, diffs and object information</h4>
-
+<!-- section --> 
           <div class="card-body">
             <p>Show the commit history for the currently active branch</p>
           </div>
           <pre class="code-block"><code>
             git log
           </code></pre>
-
+<!-- section --> 
           <div class="card-body">
                 <p>Show the commits on branchA that are not on branchB</p>
           </div>
           <pre class="code-block"><code>
             git log branchB..branchA
           </code></pre>
-
+<!-- section --> 
           <div class="card-body">
               <p>Show the commits that changed file, even across renames</p>
           </div>
           <pre class="code-block"><code>
             git log --follow [file]
           </code></pre>
-
+<!-- section --> 
           <div class="card-body">
             <p>Show the diff of what is in branchA that is not in branchB</p>
           </div>
           <pre class="code-block"><code>   
             git diff branchB...branchA  
           </code></pre>
-
+<!-- section --> 
           <div class="card-body">
           <p>Show any object in Git in human-readable format</p>
           </div>
